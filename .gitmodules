@@ -4,3 +4,6 @@
 [submodule "mathjax"]
 	path = mathjax
 	url = https://github.com/mathjax/MathJax.git
+[submodule "presentable"]
+	path = presentable
+	url = git@github.com:frederickf/presentable.git
