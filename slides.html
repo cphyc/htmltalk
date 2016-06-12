@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="reveal/css/reveal.min.css">
     <link rel="stylesheet" href="pkgwtheme.css" id="theme">
     <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+    <link rel="stylesheet" href="presentable/dist/presentable.min.css" type="text/css" media="screen" />
     <script>
       document.write('<link rel="stylesheet" href="reveal/css/print/'+(window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper')+'.css" type="text/css" media="print">');
     </script>
@@ -678,6 +679,8 @@
           { src: 'mymath.js', async: true },
 	  { src: 'pdfimgs.js', async: true },
 	  { src: 'slideautostart.js', async: true },
+          { src: 'presentable/dist/presentable.min.js', callback: function() {
+	    presentable.toc({framework: "revealjs"}); } }
         ],
       });
 
